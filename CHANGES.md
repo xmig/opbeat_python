@@ -1,4 +1,4 @@
-### 3.6.2 ###
+### 3.6.1.1 ###
  * once again fixed **async** as variable name - for python3.7 compatibility
 ### 3.6.1 ###
  * added support for [`psycopg2.sql.SQL`](http://initd.org/psycopg/docs/sql.html) objects

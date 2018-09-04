@@ -149,8 +149,8 @@ setup_kwargs = dict(
     version=VERSION,
     author='Opbeat, Inc',
     author_email='support@opbeat.com',
-    url='https://github.com/opbeat/opbeat_python',
-    description='The official Python module for Opbeat.com',
+    url='https://github.com/xmig/opbeat_python',
+    description='The official Python module for Opbeat.com - FORK',
     long_description=open(os.path.join(os.path.dirname(__file__), 'README.rst'), encoding='utf-8').read(),
     packages=find_packages(exclude=("tests",)),
     zip_safe=False,
@@ -178,6 +178,7 @@ setup_kwargs = dict(
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
     ],
 )
 
