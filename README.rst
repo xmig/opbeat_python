@@ -1,6 +1,8 @@
 Opbeat for Python
 =================
 
+**python3.7 compatibility now**
+
 .. image:: https://api.travis-ci.org/opbeat/opbeat_python.svg?branch=master
     :target: https://travis-ci.org/opbeat/opbeat_python
     :alt: Build Status

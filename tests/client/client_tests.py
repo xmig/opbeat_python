@@ -507,7 +507,7 @@ class ClientTest(TestCase):
             organization_id='organization_id',
             app_id='app_id',
             secret_token='secret',
-            async=True,
+            asynk=True,
         )
 
     @mock.patch('opbeat.utils.is_master_process')

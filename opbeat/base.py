@@ -119,7 +119,7 @@ class Client(object):
                  timeout=None, hostname=None, auto_log_stacks=None, key=None,
                  string_max_length=None, list_max_length=None, processors=None,
                  filter_exception_types=None, servers=None, api_path=None,
-                 async=None, async_mode=None, traces_send_freq_secs=None,
+                 asynk=None, async_mode=None, traces_send_freq_secs=None,
                  transactions_ignore_patterns=None, framework_version='',
                  **kwargs):
         # configure loggers first
@@ -145,13 +145,13 @@ class Client(object):
             secret_token = os.environ['OPBEAT_SECRET_TOKEN']
 
         self.servers = servers or defaults.SERVERS
-        if async is not None and async_mode is None:
+        if asynk is not None and async_mode is None:
             warnings.warn(
                 'Usage of "async" argument is deprecated. Use "async_mode"',
                 category=DeprecationWarning,
                 stacklevel=2,
             )
-            async_mode = async
+            async_mode = asynk
         self.async_mode = (async_mode is True
                            or (defaults.ASYNC_MODE and async_mode is not False))
         if not transport_class:
